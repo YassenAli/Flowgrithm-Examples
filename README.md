@@ -34,20 +34,6 @@ This repository contains a collection of Flowgrithm examples I created while lea
 - **if num is a prime num or not...fprg**: Determine if a number is prime.
 - **Iterative Factorial.fprg**: Calculate the factorial of a number iteratively.
 
-## Screenshots
-
-Here are some screenshots of the Flowgrithm examples:
-
-- **find-prime.png**: ![find-prime](screen%20of%20python%20examples/find-prime.png)
-- **From fahrenheit to celsius.png**: ![From fahrenheit to celsius](screen%20of%20python%20examples/From%20fahrenheit%20to%20celsius.png)
-- **greeting message.png**: ![greeting message](screen%20of%20python%20examples/greeting%20message.png)
-- **num^1-to-num^10.png**: ![num^1-to-num^10](screen%20of%20python%20examples/num^1-to-num^10.png)
-- **reverse in python.png**: ![reverse in python](screen%20of%20python%20examples/reverse%20in%20python.png)
-- **reverse string and if it palindrome.png**: ![reverse string and if it palindrome](screen%20of%20python%20examples/reverse%20string%20and%20if%20it%20palindrome.png)
-- **ticket price.png**: ![ticket price](screen%20of%20python%20examples/ticket%20price.png)
-- **welcoming him if friend and greeting him if not friend.png**: ![welcoming him if friend and greeting him if not friend](screen%20of%20python%20examples/welcoming%20him%20if%20friend%20and%20greeting%20him%20if%20not%20friend.png)
-- **Write_an_algorithm_to_delete_an_element_A[p]_from_an_array_segment_A[m...n].png**: ![Write an algorithm to delete an element A[p] from an array segment A[m...n]](screen%20of%20python%20examples/Write_an_algorithm_to_delete_an_element_A[p]_from_an_array_segment_A[m...n].png)
-
 ## About
 
 These examples were created as part of my university coursework to help me understand Flowgrithm better. They cover a wide range of basic programming concepts and algorithms.
