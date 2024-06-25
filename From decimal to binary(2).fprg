@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-11 01:20:20 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDE6MTk6NDkgUE07MjQ1NQ=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDE6MTk6NTIgUE07MTttYWtrYTtERVNLVE9QLU5HNjNQUkQ7MjAyMi0xMC0yMDsxMTo1ODo1MCDYtTtEZWNpbWFsVG9CaW5hcnktQWhtZWRBbGkuZnByZzs5NzM4"/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDE6MjA6MjAgUE07MTsyNTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="binary" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="binary" expression="&quot;&quot;"/>
+            <while expression="n &gt; 0">
+                <assign variable="binary" expression="n % 2 &amp; binary"/>
+                <assign variable="n" expression="n / 2"/>
+            </while>
+            <output expression="binary" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

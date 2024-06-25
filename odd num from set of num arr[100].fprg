@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-07 08:03:08 AM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMDc7MDc6NTk6MjUgQU07MjQ0OQ=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMDc7MDg6MDM6MDggQU07MTsyNTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="arr" type="Integer" array="True" size="100"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="arr[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="arr[i] % 2 != 0">
+                    <then>
+                        <output expression="arr[i]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

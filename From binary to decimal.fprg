@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-27 04:18:41 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTAtMjc7MDQ6MDg6NDMgUE07MjQ1Ng=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTAtMjc7MDQ6MTg6NDEgUE07MTsyNTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, count, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="count" expression="1"/>
+            <input variable="n"/>
+            <declare name="arr" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="arr[i]"/>
+            </for>
+            <for variable="i" start="n-1" end="0" direction="dec" step="1">
+                <assign variable="sum" expression="count*arr[i]+sum"/>
+                <assign variable="count" expression="count*2"/>
+            </for>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

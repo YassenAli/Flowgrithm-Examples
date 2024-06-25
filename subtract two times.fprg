@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-12 11:23:07 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTI7MTA6NDE6MjcgUE07MjQ0Nw=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTI7MTE6MjM6MDcgUE07MTsyNTU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h, m, s, h1, m1, s1, h2, m2, s2" type="Integer" array="False" size=""/>
+            <input variable="h1"/>
+            <input variable="m1"/>
+            <input variable="s1"/>
+            <input variable="h2"/>
+            <input variable="m2"/>
+            <input variable="s2"/>
+            <if expression="m1 &gt; m2">
+                <then>
+                    <assign variable="h" expression="(h2 -h1) - 1"/>
+                </then>
+                <else>
+                    <assign variable="h" expression="h2 - h1"/>
+                </else>
+            </if>
+            <assign variable="m1" expression="60 - m1"/>
+            <if expression="(m1 + m2) &gt;= 60">
+                <then>
+                    <assign variable="m" expression="60 - (m1 + m2)"/>
+                    <if expression="m &lt; 0">
+                        <then>
+                            <assign variable="m" expression="m * -1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="m" expression="m1 + m2"/>
+                </else>
+            </if>
+            <output expression="h" newline="True"/>
+            <output expression="m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

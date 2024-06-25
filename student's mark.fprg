@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-12 11:30:09 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTI7MTE6MjM6MTEgUE07MjQ0MQ=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTI7MTE6MzA6MDkgUE07MTsyNTU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="grade" type="Integer" array="False" size=""/>
+            <input variable="grade"/>
+            <if expression="grade &lt; 40">
+                <then>
+                    <output expression="&quot;F&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="grade &lt; 50">
+                        <then>
+                            <output expression="&quot;D&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="grade &lt; 70">
+                                <then>
+                                    <output expression="&quot;B&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="grade &lt;= 100">
+                                        <then>
+                                            <output expression="&quot;A&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

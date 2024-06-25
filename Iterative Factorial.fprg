@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-28 07:16:13 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTA7MDc6NTI6NTkgUE07MjQ1OA=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjg7MDc6MTY6MTMgUE07MjsyNTY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, fact, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the number.&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="fact" expression="1"/>
+            <for variable="i" start="1" end="num" direction="inc" step="1">
+                <assign variable="fact" expression="fact * i"/>
+            </for>
+            <output expression="&quot;Factorial of the number&quot;&amp;num&amp;&quot;=&quot;&amp;fact" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

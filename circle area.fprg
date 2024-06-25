@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-07 04:07:08 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMDc7MDM6NTU6MzkgUE07MjQ2MQ=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMDc7MDQ6MDc6MDggUE07MTsyNTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area, radius" type="Real" array="False" size=""/>
+            <input variable="radius"/>
+            <if expression="radius &gt;= 0">
+                <then>
+                    <assign variable="area" expression="(radius^2)*22/7"/>
+                    <output expression="area" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;sorry radius can't be negative&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

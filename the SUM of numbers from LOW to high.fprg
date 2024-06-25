@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-29 05:57:18 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjk7MDU6NDk6MzggUE07MjQ2OQ=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjk7MDU6NTc6MTggUE07MjsyNTc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="low, high, i, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the low number&quot;" newline="True"/>
+            <input variable="low"/>
+            <output expression="&quot;please enter the high number&quot;" newline="True"/>
+            <input variable="high"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="low" end="high" direction="inc" step="1">
+                <assign variable="sum" expression="sum + i"/>
+            </for>
+            <output expression="&quot;the SUM of numbers from LOW to HIGH is &quot; &amp; sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

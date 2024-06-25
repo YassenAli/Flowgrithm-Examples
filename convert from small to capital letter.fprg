@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-29 03:51:16 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjk7MDM6NTA6MzQgUE07MjQ1NQ=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjk7MDM6NTA6MzYgUE07MTthN21lZDtERVNLVE9QLTk0RklFTFM7MjAyMi0xMS0yNTswNToyOToxNCBQTTtQcm9ibGVtMzItU29sdXRpb24uZnByZzs3Njkz"/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjk7MDM6NTE6MTYgUE07MTsyNTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <declare name="word, capital" type="String" array="False" size=""/>
+            <assign variable="capital" expression="&quot;&quot;"/>
+            <input variable="word"/>
+            <for variable="c" start="0" end="len(word)-1" direction="inc" step="1">
+                <assign variable="a" expression="ToCode(char(word,c))"/>
+                <assign variable="a" expression="a-32"/>
+                <assign variable="capital" expression="capital &amp; ToChar(a)"/>
+            </for>
+            <output expression="capital" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

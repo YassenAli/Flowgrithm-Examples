@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-11 03:05:24 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDI6NTY6MjIgUE07MjQ0OA=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDM6MDU6MjQgUE07MTsyNTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="res, r1, r2, a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="res" expression="b*b-4*a*c"/>
+            <if expression="res &gt;= 0">
+                <then>
+                    <assign variable="r1" expression="(-b-sqrt(res))/(2*a)"/>
+                    <assign variable="r2" expression="(-b+sqrt(res))/(2*a)"/>
+                    <output expression="r1" newline="True"/>
+                    <output expression="r2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Error Not real root&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

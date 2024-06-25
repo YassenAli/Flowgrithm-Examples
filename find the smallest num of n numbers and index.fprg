@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-12 09:31:05 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTI7MDk6MzA6NDAgUE07MjQ0OA=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTI7MDk6MzA6NDIgUE07MTt1c2VyO1lBU1NJTi1BTEk7MjAyMi0xMS0xMjswOToxNzowNiBQTTtmaW5kIHRoZSBzbWFsbGVzdCBudW0gb2YgbiBudW1iZXJzLi5mcHJnOzg4NzY="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTI7MDk6MzE6MDUgUE07MTsyNTU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arr" type="Integer" array="True" size="100"/>
+            <declare name="i, n, minimum, index" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="arr[i]"/>
+            </for>
+            <assign variable="minimum" expression="arr[0]"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="arr[i] &lt; minimum">
+                    <then>
+                        <assign variable="minimum" expression="arr[i]"/>
+                        <assign variable="index" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;minimum element = &quot; &amp; minimum" newline="True"/>
+            <output expression="index" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

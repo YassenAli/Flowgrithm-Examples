@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-11 02:32:05 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDI6MjY6MzEgUE07MjQ0NQ=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDI6MzI6MDUgUE07MTsyNTUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, factor" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <for variable="factor" start="1" end="num / 2" direction="inc" step="1">
+                <if expression="num % factor = 0">
+                    <then>
+                        <output expression="factor" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

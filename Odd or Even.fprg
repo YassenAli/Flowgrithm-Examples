@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-11 02:03:45 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDI6MDM6MTkgUE07MjQ0Ng=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDI6MDM6MjEgUE07MTtsZW5vdm87REVTS1RPUC1PRTFDVk1GOzIwMjItMTAtMTM7MDk6Mzg6NTUgQU07RXZlbl9vcl9PZGQuZnByZzs3MjQz"/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMTE7MDI6MDM6NDUgUE07MTsyNTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <input variable="number"/>
+            <if expression="number mod 2 = 0">
+                <then>
+                    <output expression="&quot;num is even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;num is odd&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

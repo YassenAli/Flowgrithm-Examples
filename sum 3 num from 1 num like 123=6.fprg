@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-05 09:42:00 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMDU7MDk6MzY6NDYgUE07MjQ2Mg=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMDU7MDk6NDI6MDAgUE07MTsyNTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rem, sum, num" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="num&gt;0">
+                <assign variable="rem" expression="num%10"/>
+                <assign variable="num" expression="num/10"/>
+                <assign variable="sum" expression="sum+rem"/>
+            </while>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

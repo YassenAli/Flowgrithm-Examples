@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-28 06:27:09 PM"/>
+        <attribute name="created" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjg7MDY6MjU6MjUgUE07MjQ1OQ=="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjg7MDY6MjU6MzAgUE07MTthN21lZDtERVNLVE9QLTk0RklFTFM7MjAyMi0xMS0xMjswOTo0Mzo1MSBQTTtQcm9iZWxtMi1Tb2x1dGlvbi5mcHJnICgyKS5mcHJnOzgyNzc="/>
+        <attribute name="edited" value="dXNlcjtZQVNTSU4tQUxJOzIwMjItMTEtMjg7MDY6Mjc6MDkgUE07MTsyNTcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h, m, s" type="Integer" array="False" size=""/>
+            <declare name="a" type="String" array="False" size=""/>
+            <declare name="BT" type="Integer" array="True" size="3"/>
+            <declare name="ST" type="Integer" array="True" size="3"/>
+            <declare name="i, o, T1, T2, l" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="&quot;,&quot;"/>
+            <output expression="&quot;Please Enter The Big Time Hours and Minitus and Seconds&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="T1"/>
+                <assign variable="BT[i]" expression="T1"/>
+            </for>
+            <output expression="&quot;Please Enter The Small Time Hours and Minitus and Seconds&quot;" newline="True"/>
+            <for variable="o" start="0" end="2" direction="inc" step="1">
+                <input variable="T2"/>
+                <assign variable="ST[o]" expression="T2"/>
+            </for>
+            <if expression="BT[2]&gt;0">
+                <then>
+                    <assign variable="h" expression="(BT[0]-ST[0])-1"/>
+                    <assign variable="m" expression="((60-ST[1])+(BT[1]))-1"/>
+                    <assign variable="s" expression="((60-ST[2])+BT[2])"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="h" newline="False"/>
+            <output expression="&quot;,&quot; &amp; m" newline="False"/>
+            <output expression="&quot;,&quot; &amp; s" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
